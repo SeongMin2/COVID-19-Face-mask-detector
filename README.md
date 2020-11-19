@@ -1,1 +1,1 @@
-# COVID-19-Face-mask-detector
+# COVID-19-Face-mask-detector by SeongMin2
