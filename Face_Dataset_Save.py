@@ -14,9 +14,9 @@ without_files = os.listdir(without_dir)
 print(withimgnum)
 print(withoutimgnum)
 
-for k in range(250,300): # 범위 필요에 따라 변경
+for k in range(250,300): # Change range (the number of images)
     count=k
-    img = cv2.imread('raw_data/with_mask2/' + with_files[k])  # 불러올 파일 경로
+    img = cv2.imread('raw_data/with_mask2/' + with_files[k])
     h, w = img.shape[:2]
     blob = cv2.dnn.blobFromImage(img, scalefactor=1., size=(305,305), mean=(104., 177., 123.))
     facenet.setInput(blob)
@@ -31,14 +31,13 @@ for k in range(250,300): # 범위 필요에 따라 변경
         x2 = int(dets[0, 0, i, 5] * w)
         y2 = int(dets[0, 0, i, 6] * h)
 
-        if (x2 >= w or y2 >= h):  # 얼굴인식중에 가끔 이상한 부분을 인식하는 경우를 무시하기 위한 코드
+        if (x2 >= w or y2 >= h):
             continue
 
         face = img[y1:y2, x1:x2]
     face = cv2.resize(face, (200, 200))
 
-    #face = cv2.cvtColor(face, cv2.COLOR_BGR2GRAY) # gray할 때만 사용
-    file_name_path = 'train_data2/mask/trainnm' + str(count) + '.jpg'  # 저장경로및 파일명 설정
+    file_name_path = 'train_data2/mask/trainnm' + str(count) + '.jpg'
     cv2.imwrite(file_name_path, face)
     print(count)
 
