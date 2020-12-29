@@ -62,7 +62,7 @@ So i lowered the black transparency of the mask image.
 
 and i useed the black mask image below.
 
-<img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FF4J24%2FbtqQCzyA9yW%2FJItbziKFKYhc7ZndGTB2Wk%2Fimg.png">
+<img src="./Readme_images/a3.jpg" width="235">
 
 As a result, i collected the mask data.
 
