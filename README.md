@@ -1,13 +1,13 @@
 # COVID-19-Face-mask-detector using simple CNN 
 ## (1) Development environment
-#
+
 * Operating System : Window 10 edu
 * Language : Python
 * Development Tools : Pycharm Community Edition 2020.2.1
 * Library : opencv, tensorflow, keras, pillow, os, ...
 
 ## (2) Implementation contents
-#
+
 * It can distinguish whether people are wearing mask or not.
 
 * The results are shown in monitor.
@@ -21,7 +21,7 @@
 * The model learned pictures with RGB scale, not gray scale.
 
 ## (3) Design methods
-#
+
 ### ① Data collection
 
 It seemed hard to collect photo of a face wearing a mask by taking a picture one by one or searching on the internet.
@@ -68,7 +68,6 @@ As a result, i collected the mask data.
 
 <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FF6bLG%2FbtqQKvnT1bI%2FOAKNfA1JQ09WgH104dTTq1%2Fimg.png">
 
-#
 
 ### ② Data Preprocessing
 
@@ -80,7 +79,6 @@ To extract the face part, i used face recognition model.
 
 <img src="./Readme_images/a2.jpg">
 
-#
 
 ### ③ Machine learning
 
@@ -94,7 +92,6 @@ I designed neural network using CNN.
 
 <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fb1wCtO%2FbtqQBGLusI6%2FLtFZ9TmFrcUqf1wyuchuKk%2Fimg.png">
 
-#
 
 ### ④ Test
 
@@ -102,14 +99,12 @@ I prepared the test data which does not overlap with train data.
 
 <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FcKoHGV%2FbtqQBHXXPZF%2FHGER078HfSCB5jk6u7VQy0%2Fimg.png">
 
-#
 
 ### ⑤ Result
 
 <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FcKbjs6%2FbtqQzRNjgpq%2FTcQagcvcFoOleh3syEJjNk%2Fimg.png">
 
 
-#
 ## (4) Code description
 
 * Create_Mask_Dataset .py : Code to put the mask image into the face image
@@ -125,7 +120,6 @@ I prepared the test data which does not overlap with train data.
 * 8LBMI2.h5 : trained model
 
 
-#
 ## Reference
 
 [Face dataset 1](https://github.com/prajnasb/observations)
